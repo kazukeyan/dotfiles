@@ -17,10 +17,20 @@ NeoBundle 'Shougo/vimproc'
 NeoBundle 'Shougo/vimshell'
 NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'Shougo/unite.vim'
+NeoBundle 'tpope/vim-endwise.git'
+NeoBundle 'tpope/vim-rails'
+NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'vim-scripts/dbext.vim'
+NeoBundle 'vim-scripts/desert.vim'
+NeoBundle 'Lokaltog/vim-powerline'
 
 "-------------------------------------------------------------------------------
 " 基本設定
 "-------------------------------------------------------------------------------
+" 色設定
+colorscheme desert
+" フォント設定
+
 " エンコーディング設定
 set encoding=utf-8
 " ファイル文字コード自動認識
@@ -33,6 +43,15 @@ set nobackup
 set list
 " 行番号の表示
 set number
+" クリップボードOS共有
+set clipboard=unnamed
+" タブ文字を空白入力に
+set expandtab
+
+"-------------------------------------------------------------------------------
+" オートコマンド設定
+"-------------------------------------------------------------------------------
+au BufNewFile,BufRead *.rb  set nowrap tabstop=2 shiftwidth=2
 
 filetype plugin indent on
 
