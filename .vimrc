@@ -52,6 +52,9 @@ set expandtab
 " オートコマンド設定
 "-------------------------------------------------------------------------------
 au BufNewFile,BufRead *.rb  set nowrap tabstop=2 shiftwidth=2
+" history/yankの有効化
+let g:unite_source_history_yank_enable =1
+nnoremap <silent> ,gy :<C-u>Unite history/yank<CR>
 
 " .vimrcを開く
 nnoremap ,ev. :<C-u>edit $MYVIMRC<CR>
