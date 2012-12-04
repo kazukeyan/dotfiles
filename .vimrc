@@ -53,6 +53,12 @@ set expandtab
 "-------------------------------------------------------------------------------
 au BufNewFile,BufRead *.rb  set nowrap tabstop=2 shiftwidth=2
 
+" .vimrcを開く
+nnoremap ,ev. :<C-u>edit $MYVIMRC<CR>
+
+" .vimrcを即座に反映する　
+nnoremap ,sv. :<C-u>source $MYVIMRC<CR>
+
 filetype plugin indent on
 
 " Installation check.
