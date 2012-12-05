@@ -18,6 +18,8 @@ NeoBundle 'Shougo/vimshell'
 NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'h1mesuke/unite-outline'
+NeoBundle 'ujihisa/unite-font'
+NeoBundle 'ujihisa/unite-colorscheme'
 NeoBundle 'tpope/vim-endwise.git'
 NeoBundle 'tpope/vim-rails'
 NeoBundle 'scrooloose/nerdtree'
@@ -59,6 +61,9 @@ let g:neocomplcache_enable_at_startup = 1
 " history/yankの有効化
 let g:unite_source_history_yank_enable =1
 nnoremap <silent> ,gy :<C-u>Unite history/yank<CR>
+
+" Uniteを縦分割で開始
+let g:unite_enable_split_vertically = 1
 
 " .vimrcを開く
 nnoremap ,ev. :<C-u>edit $MYVIMRC<CR>
