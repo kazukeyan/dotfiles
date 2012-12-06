@@ -32,7 +32,10 @@ NeoBundle 'Lokaltog/vim-powerline'
 "-------------------------------------------------------------------------------
 " 色設定
 colorscheme desert
-" フォント設定
+" 補完ポップアップの色設定
+hi Pmenu guibg=#666666
+hi PmenuSel guibg=#8cd0d3 guifg=#666666
+hi PmenuSbar guibg=#333333 
 
 " エンコーディング設定
 set encoding=utf-8
